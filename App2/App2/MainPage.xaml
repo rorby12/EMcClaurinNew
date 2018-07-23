@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="App2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock x:Name="descriptor" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" Text="Series Expansion of e^x" TextWrapping="Wrap" VerticalAlignment="Top" Width="748" FontSize="24"/>
+        <TextBox x:Name="xTerm" HorizontalAlignment="Left" Margin="10,57,0,0" Text="x Term" VerticalAlignment="Top" Width="323" InputScope="Url" Height="22"/>
+        <TextBox x:Name="numExpansion" HorizontalAlignment="Left" Text="# terms in series" VerticalAlignment="Top" Margin="373,57,0,0" Width="249"/>
+        <Button x:Name="Button" Content="Determine" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="663,57,0,0" Click="onClick" Width="101"/>
+        <TextBlock x:Name="descriptorMcClaurin" HorizontalAlignment="Left" Height="29" Margin="10,158,0,0" Text="Resulting McClaurin Series:" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBlock x:Name="descriptorExplicitMath" HorizontalAlignment="Left" Height="29" Margin="10,326,0,0" Text="Resulting Equation:" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBlock x:Name="descriptorXTerm" HorizontalAlignment="Left" Height="29" Margin="10,94,0,0" Text="Enter in the x above" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBlock x:Name="descriptorNumTerms" HorizontalAlignment="Left" Height="29" Margin="373,98,0,0" Text="Enter the # of terms you want above" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"/>
+        <TextBox x:Name="expandResult" HorizontalAlignment="Left" Height="126" Margin="10,195,0,0" Text="" VerticalAlignment="Top" Width="1091" IsReadOnly="True"/>
+        <TextBox x:Name="mathResult" HorizontalAlignment="Left" Height="126" Margin="10,360,0,0" Text="" VerticalAlignment="Top" Width="1091" IsReadOnly="True"/>
+
+    </Grid>
+</Page>
